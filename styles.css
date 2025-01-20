@@ -1,0 +1,57 @@
+.pentete{
+  color: cadetblue;
+  font-size:16px;
+  text-decoration: underline;
+}
+.bounce{
+  width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+color: black;
+  background-color: aquamarine;
+}
+li{
+  
+  color: darkcyan
+}
+
+
+body {
+  background-image: url("logo.jpj");
+}
+p{
+  font-style: italic;
+}
+li{
+  font-style: oblique;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+a{
+  color: darkblue;
+  font-style: oblique
+}
+ol{
+  color: darkslategrey
+}
+.em1{
+  font-weight: 16px;
+  text-align: center;
+}
+footer{
+  font-style: bold
+}
+.plien{
+  padding: 10px;
+            margin: 16px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+         text-shadow: 1px 2px 3px aqua;
+}
+.alien{
+  width: 20%;
+}
