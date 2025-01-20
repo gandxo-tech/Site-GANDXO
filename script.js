@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   titles.forEach((title) => {
     title.addEventListener("mouseover", function () {
       this.style.color = "blue";
-      this.style.transition = "color 0.5s";
+      this.style.transition = "color 0.5s ease"; // Transition pour une animation douce
     });
 
     title.addEventListener("mouseout", function () {
@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Vérification des liens
+// Vérification des liens (éviter les liens vides ou invalides)
 document.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", function (event) {
-    if (!this.href) {
-      event.preventDefault();
+    // Vérifie si le lien a un href vide, ou s'il est égal à "#" ou "javascript:void(0)"
+    if (!this.href || this.href === "#" || this.href === "javascript:void(0)") {
+      event.preventDefault(); // Empêche l'action du lien
       alert("Le lien n'est pas encore disponible l'equipe GANDXO y travaille !");
     }
   });
